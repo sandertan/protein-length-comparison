@@ -133,10 +133,6 @@ For example, a transcript is
   - has 50 bp 3' UTR
 The PFAM domain is located on protein locations 40-60. 
 
-PFAM start on transcript = 40*3 + 100 = location 220 of the reference transcript/
-PFAM end on transcript = 60*3 + 100 = location 280 of the reference transcript/
-
-
-```python
-
-```
+When drawing the locations of PFAM domains on reference transcript, that consists of all exons, <b>including the UTRs</b>:
+- PFAM start on transcript = 40\*3 + 100 = location 220 of the reference transcript.
+- PFAM end on transcript = 60\*3 + 100 = location 280 of the reference transcript.
