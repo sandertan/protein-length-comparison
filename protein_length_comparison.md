@@ -113,7 +113,10 @@ plt.show()
 ![png](output_5_0.png)
 
 
-There is a difference between the calculated protein lengths and the Genome Nexus protein lenghts, for about 1 third of the transcripts. After manual inspection of these transcript, it appears that the CDS is incomplete on ENSEMBL. Therefore, a stop or start codon is often missing. This has been described on http://lists.ensembl.org/pipermail/dev/2014-April/010022.html. An example of this is ENST00000134644 on http://feb2014.archive.ensembl.org/Homo_sapiens/Transcript/Exons?db=core;g=ENSG00000134644;r=1:31532126-31534763;t=ENST00000531867. This length of the protein is 96 basepairs, while the (coding sequence / 3 ) - 1 results in 95 basepairs. After manual inspection of the coding sequence, it appears a stop codon is missing. The upper table describes this incompleteness by "CDS incomplete" on the "3'". 
+There is a difference between the calculated protein lengths and the Genome Nexus protein lenghts, for about 1 third of the transcripts. After manual inspection of these transcript, it appears that the CDS is incomplete on ENSEMBL. Therefore, a stop or start codon is often missing. This has been described on http://lists.ensembl.org/pipermail/dev/2014-April/010022.html. 
+
+### Example
+An example of this is ENST00000134644 on http://feb2014.archive.ensembl.org/Homo_sapiens/Transcript/Exons?db=core;g=ENSG00000134644;r=1:31532126-31534763;t=ENST00000531867. This length of the protein is 96 basepairs, while the (coding sequence / 3 ) - 1 results in 95 basepairs. If you manually inspect the basepairs, you will notice a appears a stop codon is missing. The upper table describes this incompleteness by "CDS incomplete" on the "3'". 
 
 ## Conclusion
 
