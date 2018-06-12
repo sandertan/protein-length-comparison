@@ -136,3 +136,10 @@ The PFAM domain is located on protein locations 40-60.
 When drawing the locations of PFAM domains on reference transcript, that consists of all exons, <b>including the UTRs</b>:
 - PFAM start on transcript = 40\*3 + 100 = location 220 of the reference transcript.
 - PFAM end on transcript = 60\*3 + 100 = location 280 of the reference transcript.
+
+# PFAM
+Additionaly, we checked whether the PFAM positions and protein lenghts in Ensembl are the same. This looks like it, since PFAM uses UniProt ("Pfam pre-calculates the domain compositions and architectures for all the proteomes present in our snapshot of UniProt proteomes. "
+
+Protein lengths are from Ensembl Lookup (http://grch37.rest.ensembl.org/documentation/info/lookup and https://github.com/genome-nexus/genome-nexus-importer/blob/88f0d68d1ffc877af2f54921950aa576336c9062/scripts/download_transcript_info_from_ensembl.py#L7).
+
+PFAM positions from Ensembl are retrieved through BioMart. (https://github.com/genome-nexus/genome-nexus-importer/tree/88f0d68d1ffc877af2f54921950aa576336c9062#pfam-endpoint)
